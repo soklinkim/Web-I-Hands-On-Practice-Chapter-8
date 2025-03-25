@@ -3,8 +3,20 @@
 <head>
     <title>Page Title Goes Here</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=devicewidth, initial-scale=1.0">
 </head>
 <body>
+    <header>
+        <h1>
+            Picture Element
+        </h1>
+    </header>
+    <picture>
+        <source media="(min-width: 1200px)" srcset="large.jpg">
+        <source media="(min-width: 800px)" srcset="medium.jpg">
+        <source media="(min-width: 320px) "srcset="small.jpg">
+        <img src="fallback.jpg" alt="waterwheel">
+    </picture>
 
 </body>
 </html>
